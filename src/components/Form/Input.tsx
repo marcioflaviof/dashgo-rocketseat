@@ -18,14 +18,13 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
   { name, label, error = null, ...rest },
   ref
 ) => {
-  
   return (
     <FormControl isInvalid={!!error}>
       {!!label && <FormLabel htmlFor={name}>{label}</FormLabel>}
       <ChakraInput
         name={name}
-        type="email"
         id={name}
+        type="text"
         focusBorderColor="pink.500"
         bgColor="gray.900"
         variant="filled"
