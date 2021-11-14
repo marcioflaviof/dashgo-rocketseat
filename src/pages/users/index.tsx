@@ -40,8 +40,6 @@ export default function UserList() {
       ["user", userId],
       async () => {
         const response = await api.get(`users/${userId}`);
-
-        console.log(response);
       },
       {
         staleTime: 1000 * 60 * 10, // 10 mins
