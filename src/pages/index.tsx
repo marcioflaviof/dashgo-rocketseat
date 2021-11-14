@@ -67,7 +67,7 @@ export default function SignIn() {
             size="lg"
             isLoading={isSubmitting}
           >
-            SignIn
+            Sign in
           </Button>
         </Flex>
       </Flex>
